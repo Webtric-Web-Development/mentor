@@ -1,0 +1,72 @@
+/* General */
+
+body {
+    font-family: "Century Gothic", sans-serif;
+}
+
+/* header */
+
+header {
+    margin: 0 2em;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul {
+    list-style: none;
+    margin-top: 3em;
+}
+
+header ul li {
+    display: inline;
+    margin-left: 1em;
+    font-size: 1.5em;
+}
+
+header ul li:hover {
+    cursor: pointer;
+    color: #1E86A4;
+}
+
+header > div:first-of-type p {
+    font-size: 2.7em;
+}
+
+header > div:last-of-type {
+    display: block;
+    margin: 0 auto;
+    padding-top: 15em;
+    padding-bottom: 10em;
+    text-align: center;
+
+    background-image: url("../images/notebook.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header > div:last-of-type h1 {
+    font-size: 6em;
+
+}
+
+header > div:last-of-type p {
+    font-size: 2.6em;
+    color: #1E86A4;
+    padding-bottom: 6em;
+
+    background-image: url("../images/scrollDown.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 4.5em;
+}
+
+/* Header mobile adjustments */
+
+@media only screen and (max-width: 450px) {
+    header {
+        margin: 0 0.5em;
+    }
+}
