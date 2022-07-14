@@ -19,13 +19,30 @@ ul {
 
 /* header */
 
+header img {
+    width: 4em;
+    height: 4em;
+    margin: 1em
+}
+
+.logoLarge {
+    height: auto;
+    width: 30rem;
+}
+
+@media only screen and (max-width: 650px) {
+    .logoLarge {
+        width: 20rem;
+    }
+}
+
 header div {
     display: flex;
     justify-content: space-between;
 }
 
 header ul {
-    margin-top: 3em;
+    margin-top: 2em;
 }
 
 header ul li {
@@ -78,7 +95,7 @@ i {
     visibility: hidden;
 
     color: #D2B921;
-    margin: 1em 0.3em 0 0;
+    margin: 0.6em 0.3em 0 0;
 
     position: absolute;
     display: block;
@@ -97,9 +114,13 @@ i {
         text-align: center;
 
         top: 5em;
-        left: -6.5em;
+        left: -8.4em;
 
         margin-bottom: 6em;
+    }
+
+    header ul li {
+        display: block;
     }
 
     i {
@@ -118,6 +139,10 @@ h2 {
     color: #D2B921;
     font-weight: normal;
     font-size: 2em;
+}
+
+article {
+    margin-bottom: 5em;
 }
 
 article div {
@@ -194,4 +219,31 @@ main > article:last-of-type img {
     article img {
         margin: 0 auto;
     }
+}
+
+/* footer */
+
+footer {
+    background-color: #D8D8D8;
+    padding: 0.1em;
+    margin-bottom: 1em;
+    margin-top: 4em;
+    color: white;
+
+    line-height: 2em;
+}
+
+footer a {
+    color: white;
+}
+
+footer ul {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+}
+
+footer img {
+    width: 3em;
+    vertical-align: middle;
 }
