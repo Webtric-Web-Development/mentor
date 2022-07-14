@@ -1,7 +1,7 @@
 /* General */
 
 body {
-    font-family: "Century Gothic", sans-serif;
+    font-family: "Century Gothic", open-sans, sans-serif;
 }
 
 /* header */
@@ -65,8 +65,36 @@ header > div:last-of-type p {
 
 /* Header mobile adjustments */
 
+i {
+    display: none;
+    visibility: hidden;
+
+    color: #1E86A4;
+    margin: 1em 0.3em 0 0;
+
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+}
+
 @media only screen and (max-width: 450px) {
     header {
         margin: 0 0.5em;
+    }
+
+    ul {
+        display: none;
+        position: relative;
+        text-align: center;
+
+        top: 5em;
+        left: -6.5em;
+
+        margin-bottom: 6em;
+    }
+
+    i {
+        visibility: visible;
     }
 }
